@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
                 Box(
                     Modifier
                         .fillMaxSize()
-                        .semantics { testTagsAsResourceId = true } // ← testTag를 resource-id로 노출
+                        .semantics { testTagsAsResourceId = false } // ← testTag를 resource-id로 노출
                 ) {
                     CounterScreen(Modifier.align(Alignment.Center))
                 }
